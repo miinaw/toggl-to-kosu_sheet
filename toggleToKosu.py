@@ -21,10 +21,10 @@ def main():
   res_kosu()
 
   # DataFrameを作成してCSV書き出し
-  kosu_df = (pd.DataFrame(kosu_data, columns=['日付', '業務内容', '工数（時間', '工数区分']))
+  kosu_df = (pd.DataFrame(kosu_data, columns=['日付', '業務内容', '工数（時間)', '工数区分']))
   kosu_df.to_csv('Toggl-to-kosu_{:%Y%m%d-%H%M%S}.csv'.format(now), sep=',', index=False)
   
-  print (now.month,'月分 工数書き出し完了!')
+  print ('工数書き出し完了!', now)
 
 # 工数シートデータの生成
 def res_kosu():
