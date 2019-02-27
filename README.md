@@ -13,6 +13,6 @@
 3. `python tggleToKosu.py`で実行
 4. `Toggl-to-kosu.csv`というファイル名で工数用のCSVデータが書き出される
 
-### pipコマンドが使えないとき
+### ※pipコマンドが使えないとき
 easy_install
 `sudo easy_install pip`
