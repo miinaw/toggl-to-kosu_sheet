@@ -17,7 +17,7 @@ sec = []
 kosu_data = []
 now = dt.datetime.now()
 
-def main():
+def create_kosu_sheet():
   res_kosu()
 
   # DataFrameを作成してCSV書き出し
@@ -52,4 +52,4 @@ def res_kosu():
 
 # main関数呼び出し
 if __name__ == "__main__":
-    main()
+    create_kosu_sheet()
